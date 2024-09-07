@@ -82,7 +82,7 @@ class InfluenceurTableSeeder extends Seeder
             ],
             [
                 'fullName' => 'Chaimaa GHAZI',
-                'instagram_link' => 'https://www.instagram.com/moroccan.mirage/?hl=fr',
+                'instagram_link' => 'https://www.instagram.com/ghazichaimaee/',
                 'photo' => '/influenceurs/3/Chaimae Ghazi🪬.jpg',
                 'category_id' => 3,
             ],
@@ -119,19 +119,13 @@ class InfluenceurTableSeeder extends Seeder
             [
                 'fullName' => 'Aida Benchemsi',
                 'instagram_link' => 'https://www.instagram.com/aida.benchemsi/',
-                'photo' => '/influenceurs/4/Aïda Benchemsi.jpeg',
+                'photo' => '/influenceurs/4/Aïda Benchemsi.jpg',
                 'category_id' => 4,
             ],
             [
                 'fullName' => 'Ihssane RIHANI',
                 'instagram_link' => 'https://www.instagram.com/ihsun.daily/',
                 'photo' => '/influenceurs/4/Ihssane RIHANI.jpg',
-                'category_id' => 4,
-            ],
-            [
-                'fullName' => 'Maria LAZRAK',
-                'instagram_link' => 'https://www.instagram.com/maria_lazrak/',
-                'photo' => '/influenceurs/4/Maria LAZRAK.jpg',
                 'category_id' => 4,
             ],
             [
@@ -192,12 +186,6 @@ class InfluenceurTableSeeder extends Seeder
                 'fullName' => 'Aymane GHAZAOUI',
                 'instagram_link' => 'https://www.instagram.com/9ossos/',
                 'photo' => '/influenceurs/6/Aymane GHAZAOUI.jpg',
-                'category_id' => 6,
-            ],
-            [
-                'fullName' => 'Houda SEDKI',
-                'instagram_link' => 'https://www.instagram.com/sedkihouda_officiel/',
-                'photo' => '/influenceurs/6/Sedki Houda.jpg',
                 'category_id' => 6,
             ],
             [
