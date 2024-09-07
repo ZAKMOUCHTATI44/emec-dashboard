@@ -4,18 +4,20 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Influenceur;
+use App\Models\Vote;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class InfluenceurController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index(Request $request)
+    public function index(Request $request,$id)
     {
-
-        dd("OIDHOQ");
-
+        $influenceurs = Influenceur::where("category_id" , $id)->get();
+        $category = Category::find($id);
+        return view('influenceurs', compact("influenceurs" , "category"));
 
     }
 

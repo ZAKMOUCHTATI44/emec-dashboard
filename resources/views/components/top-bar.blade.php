@@ -6,12 +6,15 @@
     </div>
 
     <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-      <ul class="navbar-nav flex-row align-items-center ms-auto">
-        <li class="nav-item me-2 me-xl-0">
-            <a class="nav-link style-switcher-toggle hide-arrow" href="javascript:void(0);">
-              <i class="ti ti-md"></i>
+          <li class="menu-item">
+            <a href="/" class="menu-link">
+              <div class="capitalize text-black">Catégories</div>
             </a>
           </li>
+      <ul class="navbar-nav flex-row align-items-center ms-auto">
+        <li class="nav-item me-2 me-xl-0">
+          </li>
+
         <li class="nav-item navbar-dropdown dropdown-user dropdown">
           <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
             <div class="d-flex">

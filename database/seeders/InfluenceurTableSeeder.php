@@ -111,15 +111,15 @@ class InfluenceurTableSeeder extends Seeder
                 'category_id' => 4,
             ],
             [
-                'fullName' => 'Houda HAYANI',
-                'instagram_link' => 'https://www.instagram.com/houdahayaniamine/?hl=fr',
-                'photo' => '/influenceurs/4/𝑯𝒐𝒖𝒅𝒂 𝑯𝑨𝒀𝑨𝑵𝑰 𝑨𝑴𝑰𝑵𝑬.jpg',
+                'fullName' => 'Sofia GUEDIRA',
+                'instagram_link' => 'https://www.instagram.com/sofiaguedira/',
+                'photo' => '/influenceurs/4/Sofia Guedira.jpg',
                 'category_id' => 4,
             ],
             [
-                'fullName' => 'Meriem HAMMOUD',
-                'instagram_link' => 'https://www.instagram.com/glowbymimi_/',
-                'photo' => '/influenceurs/4/Meriem HAMMOUD.jpg',
+                'fullName' => 'Aida Benchemsi',
+                'instagram_link' => 'https://www.instagram.com/aida.benchemsi/',
+                'photo' => '/influenceurs/4/Aïda Benchemsi.jpeg',
                 'category_id' => 4,
             ],
             [

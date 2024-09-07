@@ -17,19 +17,19 @@
                             <span  style="width: 150px;height: 150px;margin: 0px auto;">
                                 <img src="{{ $influenceur->photo }}"
                                 alt="{{ $influenceur->fullName }}"
-                                width="150px"
-                                height="150px"
-                                style="border-radius: 50%"
+                                width="150"
+                                height="150"
+                                style="border-radius: 50%;width: 150px;height: 150px;"
                                 >
                             </span>
-                            <div class="card-body flex justify-between" style="justify-content: space-between;width: 100%;">
+                            <div class="card-body flex justify-between my-3" style="justify-content: space-between;width: 100%;">
                                     <h5 class="font-semibold text-center text-black">{{ $influenceur->fullName }}</h5>
                                     <a href={{$influenceur->instagram_link}} target="_blank">
                                         <img src="/instagram.png" alt="instagram"  width="25" height="25">
                                     </a>
                             </div>
                             <a href="/vote/{{$influenceur->id}}" class="bg-[#a830d0] text-white px-12 py-2 w-full text-center">
-                                Donne une note
+                                Donner une note
                             </a>
                     </div>
                 @endforeach

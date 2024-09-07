@@ -17,7 +17,7 @@
         <div class="row">
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
                 @foreach ($categories as $category)
-                        <a href="categories" class="bg-card rounded-md flex flex-col gap-5 justify-center items-center shadow-2xl p-5">
+                        <a href="/influenceur/{{$category->id }}" class="bg-card rounded-md flex flex-col gap-5 justify-center items-center shadow-2xl p-5">
                             <img src="{{ $category->photo }}"
                             alt="{{ $category->name }}"
                             width="55"

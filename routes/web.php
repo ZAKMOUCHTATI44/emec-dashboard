@@ -24,7 +24,13 @@ Route::get('/',[DashboardController::class , "index" ])->middleware(['auth', 've
 
 
 Route::middleware('auth')->group(function () {
-    Route::get('/categories', [InfluenceurController::class, 'index'])->name("categories.index");
+
+
+    Route::get('/influenceur/{id}', [InfluenceurController::class, 'index'])->name('influenceur.index');
+
+    Route::get('/vote/{id}', [VoteController::class, 'index'])->name('vote.index');
+    Route::post('/vote/{id}', [VoteController::class, 'store'])->name('vote.store');
+
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
