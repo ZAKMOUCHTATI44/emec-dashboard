@@ -114,9 +114,9 @@
 @push('js')
 
     {{-- @vite('resources/js/charts-overview.js') --}}
-    <script src="{{Vite::asset("resources/js/dashboard.js")}}"></script>
+    <script src="{{asset("js/dashboard.js")}}"></script>
     <script src="{{asset('assets/js/cards-statistics.js')}}"></script>
 
-<script src="{{Vite::asset("resources/js/chart-campaign.js")}}"></script>
+<script src="{{asset("js/chart-campaign.js")}}"></script>
 
 @endpush
