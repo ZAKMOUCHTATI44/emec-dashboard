@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('content_relevance',5);
             $table->string('notes')->nullable();
             $table->foreignId('user_id')->constrained();
-            $table->foreignId('influenceurs_id')->constrained();
+            $table->foreignId('influenceur_id')->constrained();
             $table->timestamps();
         });
     }

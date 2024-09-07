@@ -18,7 +18,7 @@ class VoteController extends Controller
         $influenceur = Influenceur::find($id);
 
         $vote = Vote::where('user_id', Auth::user()->id)
-        ->where('influenceurs_id', $id)
+        ->where('influenceur_id', $id)
         ->selectRaw('
             (CAST(community_size AS DECIMAL(5,2)) +
             CAST(engagement_rate AS DECIMAL(5,2)) +
@@ -55,7 +55,7 @@ class VoteController extends Controller
         $vote->content_relevance = $request['content_relevance'];
         $vote->notes = $request['notes'] ?? null;
         $vote->user_id = Auth::user()->id;
-        $vote->influenceurs_id = $id;
+        $vote->influenceur_id = $id;
         $vote->save();
 
         return redirect()->back()->with('success', 'Métrique ajoutée avec succès!');

@@ -17,6 +17,7 @@ class InfluenceurController extends Controller
     {
         $influenceurs = Influenceur::where("category_id" , $id)->get();
         $category = Category::find($id);
+
         return view('influenceurs', compact("influenceurs" , "category"));
 
     }

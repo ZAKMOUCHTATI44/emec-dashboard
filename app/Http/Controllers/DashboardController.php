@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Influenceur;
+use App\Models\Vote;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class DashboardController extends Controller
 {
@@ -12,7 +15,8 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        $categories = Category::all();
+
+        $categories = Category::withCount("influenceurs")->get();
 
         return view('dashboard', compact("categories"));
     }

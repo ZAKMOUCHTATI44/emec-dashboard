@@ -28,6 +28,12 @@
                             <div class="card-body">
                                 <h5 class="font-semibold text-center text-white">{{ $category->name }}</h5>
                             </div>
+
+                            <span class="text-white">
+                                {{$category->getTotal($category->id)}}
+                                /
+                                {{$category->influenceurs_count}}
+                            </span>
                     </a>
                 @endforeach
             </div>
