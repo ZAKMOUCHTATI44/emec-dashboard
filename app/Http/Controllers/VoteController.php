@@ -65,8 +65,9 @@ class VoteController extends Controller
         $vote->influenceur_id = $id;
         $vote->save();
 
+        $influenceur = Influenceur::find($id);
+        return redirect()->route("influenceur.index", ["id" =>$influenceur->category_id]);
         // Todo  redirect to page category
-        return redirect()->back()->with('success', 'Métrique ajoutée avec succès!');
     }
 
     /**

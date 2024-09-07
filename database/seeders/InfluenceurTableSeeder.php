@@ -232,7 +232,7 @@ class InfluenceurTableSeeder extends Seeder
             ],
             [
                 'fullName' => 'Hanane KHAYATI',
-                'instagram_link' => 'https://www.instagram.com/allo_kamal/',
+                'instagram_link' => 'https://www.instagram.com/hanane_khayati1/',
                 'photo' => '/influenceurs/8/Hanane KHAYATI.jpg',
                 'category_id' => 8,
             ],
@@ -249,9 +249,9 @@ class InfluenceurTableSeeder extends Seeder
                 'category_id' => 8,
             ],
             [
-                'fullName' => 'Yassine BOUZAKHTI',
-                'instagram_link' => 'https://www.instagram.com/yas_coach/',
-                'photo' => '/influenceurs/8/Yassine Bouzakhti.jpg',
+                'fullName' => 'Line Souaidi',
+                'instagram_link' => 'https://www.instagram.com/getfitbyline/',
+                'photo' => '/influenceurs/8/getfitbyline.jpg',
                 'category_id' => 8,
             ],
             [
