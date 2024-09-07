@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class=" flex text-2xl p-3 h-32 w-32 rounded-full  justify-center items-center text-white bg-[#a830d0]">
+                    <div style=" height: 8rem;width: 8rem;border-radius: 50%" class=" flex text-2xl p-3 h-32 w-32 rounded-full  justify-center items-center text-white bg-[#a830d0]">
                         {{ number_format($vote->total_vote ?? 0 , 0, ',', ' ') ?? "0"}} / 30
 
                     </div>
