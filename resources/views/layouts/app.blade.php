@@ -10,6 +10,9 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>EMEC |  @yield('title') </title>
 
+
+        <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+
         @vite('resources/css/app.css')
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
