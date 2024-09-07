@@ -29,7 +29,7 @@
                                     </a>
                             </div>
                             @if ($influenceur->getRate($influenceur->id))
-                                <span class="bg-green-500 px-12 py-2 rounded-lg text-white absolute top-0 right-0   ">
+                                <span class="bg-green-500 px-12 py-2 rounded-lg text-white absolute top-0 right-0   " style="background-color: #10B981">
                                     Déjà voté
                                 </span>
                             @endif
