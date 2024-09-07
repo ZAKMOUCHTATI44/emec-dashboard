@@ -28,14 +28,19 @@
                         <p>
                             Catégorie : {{$influenceur->category->name}}
                         </p>
-                        <a href={{$influenceur->instagram_link}} target="_blank">
-                            <img src="/instagram.png" alt="instagram"  width="25" height="25">
-                        </a>
+                        <div style="display: flex;align-items: center;gap: 20px">
+                            <a href={{$influenceur->instagram_link}} target="_blank">
+                                <img src="/instagram.png" alt="instagram"  width="25" height="25">
+                            </a>
+                            <a href="/" class="btn btn-success mx-auto">
+                                Télécharger la brochure
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div>
-                    <div class=" flex text-5xl p-3 h-20 w-20 rounded-full  justify-center items-center text-white bg-[#a830d0]">
-                        {{ number_format($vote->total_vote ?? 0 , 0, ',', ' ') ?? "0"}}
+                    <div class=" flex text-2xl p-3 h-32 w-32 rounded-full  justify-center items-center text-white bg-[#a830d0]">
+                        {{ number_format($vote->total_vote ?? 0 , 0, ',', ' ') ?? "0"}} / 30
 
                     </div>
                     <p class="text-center">
@@ -44,9 +49,17 @@
                 </div>
             </div>
 
+         <p class="mt-5">
+            Chers membres du jury, <br />
+            Veuillez évaluer chaque candidat selon les critères suivants :<br />
+            Taille de la communauté : 10/10<br />
+            Taux d'engagement : 10/10<br />
+            Pertinence du contenu : 10/10<br />
+            Le total maximum est de 30/30. Chaque critère est essentiel pour juger l’impact et l’engagement de chaque candidat. Merci de votre attention et de votre impartialité dans l’évaluation !
+         </p>
             <form action="{{route('vote.store',["id" => $influenceur->id ])}} " method="POST">
                 @csrf
-                <div class="row my-5">
+                <div class="row my-">
                     <div class="col-md-4">
                         <label for="community_size" class="form-label">
                             Taille de la communauté
@@ -60,6 +73,9 @@
                           aria-describedby="Taille de la communauté"
                           value="{{$vote->community_size ??  null }}"
                         />
+                        @error('community_size')
+                        <div style="color: red;">{{ $message }}</div>
+                    @enderror
                     </div>
                     <div class="col-md-4">
                         <label for="engagement_rate" class="form-label">
@@ -74,6 +90,9 @@
                           aria-describedby="Taux d'engagement"
                           value="{{$vote->engagement_rate ??  null}}"
                         />
+                        @error('engagement_rate')
+                        <div style="color: red;">{{ $message }}</div>
+                    @enderror
                     </div>
                     <div class="col-md-4">
                         <label for="content_relevance" class="form-label">
@@ -88,6 +107,9 @@
                           value="{{$vote->content_relevance ??  null}}"
                           aria-describedby="Pertinence du contenu"
                         />
+                        @error('content_relevance')
+                        <div style="color: red;">{{ $message }}</div>
+                    @enderror
                     </div>
                     <div class="mb-3">
                         <label class="form-label" for="basic-default-message">Notes</label>

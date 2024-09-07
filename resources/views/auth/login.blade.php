@@ -1,20 +1,9 @@
 <x-guest-layout>
-    <div class="authentication-wrapper authentication-cover authentication-bg">
+    <div class="authentication-wrapper authentication-cover authentication-bg" style="height: 100vh">
         <div class="authentication-inner row">
           <!-- /Left Text -->
-          <div class="d-none d-lg-flex col-lg-7 p-0">
-            <div class="auth-cover-bg auth-cover-bg-color d-flex justify-content-center align-items-center">
-              <img
-                src="{{ asset('assets/img/illustrations/auth-login-illustration-light.png') }}"
-                alt="auth-login-cover"
-                class="img-fluid my-5 auth-illustration"
-                />
-              <img
-                src="{{ asset('assets/img/illustrations/bg-shape-image-light.png') }}"
-                alt="auth-login-cover"
-                class="platform-bg"
-              />
-            </div>
+          <div class="d-none d-lg-flex col-lg-7 p-0" style="background-image: url('/bg-cover.jpg');background-size: cover;background-repeat: no-repeat;background-position: center">
+
           </div>
           <!-- /Left Text -->
 

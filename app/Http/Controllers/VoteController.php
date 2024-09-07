@@ -49,10 +49,17 @@ class VoteController extends Controller
      */
     public function store(Request $request,$id)
     {
+
+        $validatedData = $request->validate([
+            'community_size' => 'required|numeric|between:0,10',
+            'engagement_rate' => 'required|numeric|between:0,10',
+            'content_relevance' => 'required|numeric|between:0,10',
+        ]);
+
         $vote = new Vote();
-        $vote->community_size = $request['community_size'];
-        $vote->engagement_rate = $request['engagement_rate'];
-        $vote->content_relevance = $request['content_relevance'];
+        $vote->community_size = $validatedData['community_size'];
+        $vote->engagement_rate = $validatedData['engagement_rate'];
+        $vote->content_relevance = $validatedData['content_relevance'];
         $vote->notes = $request['notes'] ?? null;
         $vote->user_id = Auth::user()->id;
         $vote->influenceur_id = $id;
