@@ -32,7 +32,7 @@
                             <a href={{$influenceur->instagram_link}} target="_blank">
                                 <img src="/instagram.png" alt="instagram"  width="25" height="25">
                             </a>
-                            <a href="/" class="btn btn-success mx-auto">
+                            <a href="{{$influenceur->file}}" target="_blank" class="btn btn-success mx-auto">
                                 Télécharger la brochure
                             </a>
                         </div>
